@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Askani Bubble tips</title>
+
+    <script type="text/javascript" src="js/usr/fields.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/bblup.js"></script>
+    <link type="text/css" href="css/bblup.css" rel="stylesheet">
+</head>
+
+<body>
+  <br>
+  <a href="http://github.com/tooxie/askani">
+    <img style="position:absolute;top:0;right:0;border:0"
+         src="img/logo.png"
+         alt="Fork me on GitHub" />
+  </a>
+  <div class="bubbleInfo">
+    <div class="centrau">Field Type:
+      <input name="field-name" id="field-name" type="text">
+      <img class="trigger" src="img/help.png">
+    </div>
+    <table id="pop" class="popup">
+      <tbody>
+        <tr>
+          <td id="topleft" class="corner"></td>
+          <td class="top"></td>
+          <td id="topright" class="corner"></td>
+        </tr>
+        <tr>
+            <td class="left"></td>
+            <td>
+                <table class="popup-contents">
+                  <tbody>
+                    <tr>
+                        <th>Valid entries</th>
+                        <td id="tdoc">[ drop type name to text box ]</td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <script type="text/javascript" id="model-field-edit-template">
+                        for (var i in fields.types) {
+                                    document.write("<tr><td>" + fields.types[i] + "</td></tr>");
+                                } ;
+                    </script>
+                    <tr><td></td></tr>
+                    <tr id="fields-docs">
+                        <th>"Read the Django documentation"</th>
+                        <td><a href="http://docs.djangoproject.com/en/dev/ref/models/fields/">Django Fields Documentation</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                 </tbody>
+                </table>
+
+            </td>
+            <td class="right"></td>
+        </tr>
+        <tr>
+            <td class="corner" id="bottomleft"></td>
+            <td class="bottom">
+            <td class="corner" id="bottomright"></td>
+        </tr>
+      </tbody>
+    </table>
+      <br>
+  </div>
+  <br>
+</body>
+</html>
